@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-3">
+    <ul>
+      <% @student.attributes.each do |attribute| %>
+      <li><%= first_name %></li>
+      <li><%= last_name %></li>
+      <li><%= email %></li>
+      <li><%= password %></li>
+      <li><%= phone_number %></li>
+      <li><%= short_bio %></li>
+      <li><%= linkedin_url %></li>
+      <li><%= twitter_handle %></li>
+      <li><%= online_resume_url %></li>
+      <li><%= github_url %></li>
+      <li><%= photo %></li>
+      <% end %>
+    </ul>
+
+    <ul>
+      <% @student.experience.each do |experience| %>
+      <li><%= start_date %></li>
+      <li><%= end_date %></li>
+      <li><%= job_title %></li>
+      <li><%= company_name %></li>
+      <li><%= details %></li>
+      <% end %>
+    </ul>
+
+    <ul>
+      <% @student.education.each do |education| %>
+      <li><%= start_date %></li>
+      <li><%= end_date %></li>
+      <li><%= degree %></li>
+      <li><%= university_name %></li>
+      <li><%= details %></li>
+      <% end %>
+    </ul>
+
+    <ul>
+      <% @student.skills.each do |skill| %>
+      <li><%= skills_names %></li>
+      <% end %>
+    </ul>
+
+    <ul>
+      <% @student.capstone.each do |capstone| %>
+      <li><%= name %></li>
+      <li><%= description %></li>
+      <li><%= description %></li>
+      <li><%= url %></li>
+      <li><%= screenshot %></li>
+      <% end %>
+    </ul>
+  </div>
+  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/scviking831" data-widget-id="738562056119455746">Tweets by @scviking831</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
