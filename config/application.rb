@@ -5,7 +5,7 @@ require 'rails/all'
 require 'dotenv/tasks'
 
 task :mytask => :dotenv do
-    # things that require .env
+    Student.all
 end
 
 # Require the gems listed in Gemfile, including any gems
